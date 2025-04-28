@@ -9,7 +9,6 @@ const App = () => {
     fetchCSVData(setData);
   }, []);
 
-  console.log("data", data.slice(0, 5));
   return (
     <div>
       <div className="flex shadow-2xl py-4 justify-between px-4  ">
