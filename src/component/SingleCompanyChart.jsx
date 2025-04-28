@@ -57,7 +57,7 @@ const SingleCompanyChart = ({ CompanyData }) => {
         Date: {CompanyData?.index_date}
       </p>
 
-      <Pie data={data} />
+      <Pie data={data} className="h-[350px] w-[350px]" />
     </div>
   );
 };

@@ -37,9 +37,9 @@ const Dashboard = ({ companies = [] }) => {
         )}
       </div>
 
-      <div className="flex-1 flex justify-center bg-gray-100">
+      <div className="flex-1 flex  justify-center bg-gray-100">
         {selectedCompany ? (
-          <div className="h-[500px] w-[500px]">
+          <div>
             <SingleCompanyChart CompanyData={selectedCompany} />
           </div>
         ) : (
