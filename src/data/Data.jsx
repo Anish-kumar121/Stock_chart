@@ -9,7 +9,7 @@ function fetchCSVData(setData) {
     download: true,
     header: true,
     complete: (results) => {
-      setData(results.data);
+      setData(results.data.slice(0, 100));
     },
     error: (error) => {
       console.error("Error parsing CSV:", error);

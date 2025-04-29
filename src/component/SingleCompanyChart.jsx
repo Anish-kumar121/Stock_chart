@@ -51,13 +51,17 @@ const SingleCompanyChart = ({ CompanyData }) => {
   };
 
   return (
-    <div style={{ textAlign: "center", padding: "5px" }}>
-      <h2 style={{ fontSize: "30px" }}>{CompanyData?.index_name}</h2>
-      <p style={{ fontSize: "20px", paddingTop: "5px" }}>
+    <div className="flex flex-col items-center py-4 px-1">
+      <h2 className="text-2xl sm:text-3xl md:text-4xl">
+        {CompanyData?.index_name}
+      </h2>
+      <p className="text-lg sm:text-xl md:text-2xl ">
         Date: {CompanyData?.index_date}
       </p>
 
-      <Pie data={data} className="h-[350px] w-[350px]" />
+      <div className="w-full sm:w-[300px] md:w-[350px] lg:w-[400px] xl:w-[450px]">
+        <Pie data={data} />
+      </div>
     </div>
   );
 };
